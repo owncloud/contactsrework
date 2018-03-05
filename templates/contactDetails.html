@@ -24,6 +24,8 @@
 				</div>
 			</div>
 			<div id="details-actions">
+				<button ng-show="!ctrl.starred" ng-click="ctrl.starContact()" class="icon-star" title="{{ctrl.t.favour}}"></button>
+				<button ng-show="ctrl.starred" ng-click="ctrl.starContact()" class="icon-starred" title="{{ctrl.t.favour}}"></button>
 				<a href="{{ctrl.contact.data.url}}" id="contact-export-link" class="icon-download-white" title="{{ctrl.t.download}}"></a>
 				<button ng-click="ctrl.deleteContact()" class="icon-delete-white" title="{{ctrl.t.delete}}"></button>
 			</div>

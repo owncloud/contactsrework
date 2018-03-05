@@ -71,6 +71,8 @@
 	opacity: .8;
 }
 
+.contactdetails__header .icon-star,
+.contactdetails__header .icon-starred,
 .contactdetails__header .icon-delete-white,
 .contactdetails__header #contact-export-link {
 	padding: 15px;
@@ -79,6 +81,15 @@
 	opacity: .5;
 	margin: 3px;
 }
+
+.contactdetails__header .icon-starred {
+    opacity: .7;
+}
+
+.contactdetails__header .icon-star:hover,
+.contactdetails__header .icon-star:focus,
+.contactdetails__header .icon-starred:hover,
+.contactdetails__header .icon-starred:focus,
 .contactdetails__header .icon-delete-white:hover,
 .contactdetails__header .icon-delete-white:focus,
 .contactdetails__header #contact-export-link:hover,
@@ -423,12 +434,17 @@ li.addressBook-share-item span.shareeIdentifier {
 
 .app-content-list-item-star {
 	position: absolute;
-	display: none; /* change to inline-block when we implement it */
+	display: inline-block;
 	left: 16px;
 	top: 28px;
 	padding: 20px;
 	background-size: 16px;
 	z-index: 100;
+	background-image: url('../../img/actions/starred.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	min-width: 16px;
+	min-height: 16px;
 }
 
 .app-content-list-item-line-one,
